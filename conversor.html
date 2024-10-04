@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor de Real para Dólar</title>
+</head>
+<body>
+    <h1>Conversor de Real para Dólar</h1>
+    <p>Valor em Reais (BRL): <input type="number" id="reais" step="0.01"></p>
+<button onclick="
+var reais = parseFloat(document.getElementById('reais').value);
+var taxaDeCambio = 0.20;
+var dolares = reais * taxaDeCambio;
+document.getElementById('resultado').innerText = 'Valor em Dólares (USD):' +
+dolares.toFixed(2) ;
+">Converter</button>
+<p id="resultado"></p>
+
+</body>
+</html>
